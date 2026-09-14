@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        chai aur code
+    </h1>
+    <button id="stop"> stop </button>
+    <script >
+// setTimeout : ek fix time ke bad change krna ho ya dikhana ho tb use krte hai
+
+        // setTimeout(function(){
+        //     console.log("yogesh kumar meena");
+        // },2000) // 2 sec bad print krega
+
+        const sayYogesh = function(){
+             console.log("yogesh kumar meena");
+         }
+
+         const changeText = function(){
+            document.querySelector('h1').innerHTML = 'best js series'
+         }
+
+         setTimeout(sayYogesh,2000)
+        const changeMe = setTimeout(changeText,3000)
+
+           // clearTimeout : timeperiod me hone wale change ko rokne ke liye use kiya  jata hai
+          
+          document.querySelector('#stop').addEventListener('click',function(){
+            clearTimeout(changeMe) // clearTimeout ko reference(jisko rokna hai) bhi dena pdta hai
+            console.log("stopped")
+          })
+    </script>
+</body>
+</html>

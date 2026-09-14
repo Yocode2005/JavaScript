@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Javascript with Chai Aur Code
+    </h1>
+    <button id="start"> start </button>
+    <button id="stop"> stop </button>
+    <script>
+        // // setInterval(): ek fix timeout ke bad kam ko repate krna ho tb us hota hai
+
+        // const sayName = function(str){
+        //     console.log("hello my name is yogesh",str)
+        // }
+        // const intrvalId = setInterval(sayName,2000,"from jaipur") // extra parameter bhi pass kr skte hai
+
+        // // clearInterval() : setInterval() se hone wale changes ko rokne ke liye use kiya jata hai
+
+        // clearInterval(intrvalId)
+        //**********************************************************************************************
+        let forBoth;
+        const sayName = function(str){
+            console.log("hello my name is yogesh",str)
+        }
+         document.querySelector("#start").addEventListener('click',function(){
+          forBoth =  setInterval(sayName,2000,"from jaipur")
+        })
+
+        document.querySelector("#stop").addEventListener('click',function(){
+            clearInterval(forBoth);
+             console.log("stopped")
+        })
+         
+
+        
+        
+    </script>
+</body>
+</html>
