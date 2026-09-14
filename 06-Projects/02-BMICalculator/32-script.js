@@ -3,7 +3,7 @@ const form = document.querySelector('form');
 // const height = parseInt(document.querySelector('#height').value)
 
 form.addEventListener('submit', function (e) {
-  e.preventDefault();
+  e.preventDefault(); // prevent default behaviour of form to submit the data and refresh the page
 
   const height = parseInt(document.querySelector('#height').value);
   const weight = parseInt(document.querySelector('#weight').value);
