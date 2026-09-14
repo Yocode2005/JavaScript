@@ -1,12 +1,12 @@
 //   function addLanguage(langName){
 //         const str = document.createElement('li');
-//         li.innerHTML = `${langName}`
-//         document.querySelector('.language').appendChild(li) // attach kren ke liye
+//         str.innerHTML = `${langName}`
+//         document.querySelector('.language').appendChild(str) // attach kren ke liye
 //     }
-//     addLanguage("python")
-//     addLanguage("typescript")
+//     addLanguage("python");
+//     addLanguage("typescript");
 
-//************************************************************************************************************* */
+/************************************************************************************************************* */
 
     // // thoda optimize trika
     // function addOptiLanguage(langName){
@@ -29,7 +29,7 @@
     // const firstLang = document.querySelector("li:first-child")
     // firstLang.outerHTML = '<li>TypeScript</li>'
     // document.querySelector('.language').appendChild(firstLang)
-    //********************************************************************************************************** */
+    /********************************************************************************************************** */
 
     //remove
     // const lastLang = document.querySelector('li:last-child')
