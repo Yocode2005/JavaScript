@@ -36,26 +36,26 @@
 
 //************************************************************************************************************ */
 
-// const promiseFour = new Promise(function(resolve,reject){
-//     setTimeout(function(){
-//         let error = true
-//         if (!error){
-//             resolve({username : 'yogesh',password : '123'})
-//         }else{
-//             reject('Error : something went wrong')
-//         }
-//     },1000)
-// })
-// promiseFour.then((user) => { // using arrow function
-//     console.log(user);
-//     return user.username
-// }).then((myusername) => { // jo value uper wale then se aay gi vo hi pass hogi // ese chaining khte hai
-//     console.log(myusername)
-// }).catch(function(errorBolLe){ // for reject() method
-//     console.log(errorBolLe);
-// }).finally(() => { // promise resolve ho ya fir reject ye to chlega hi
-//     console.log('the promise is either resolved or rejected')
-// })
+const promiseFour = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        let error = false
+        if (!error){
+            resolve({username : 'yogesh',password : '123'})
+        }else{
+            reject('Error : something went wrong')
+        }
+    },1000)
+})
+promiseFour.then((user) => { // using arrow function
+    console.log(user);
+    return user.username
+}).then((myusername) => { // jo value uper wale then se aay gi vo hi pass hogi // ese chaining khte hai
+    console.log(myusername)
+}).catch(function(errorBolLe){ // for reject() method
+    console.log(errorBolLe);
+}).finally(() => { // promise resolve ho ya fir reject ye to chlega hi
+    console.log('the promise is either resolved or rejected')
+})
 //************************************************************************************************************* */
 
 // const promiseFive = new Promise(function(resolve,reject){
